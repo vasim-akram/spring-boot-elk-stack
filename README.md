@@ -1,15 +1,15 @@
 # spring-boot-elk-stack
 Spring-boot with ELK stack.
 
-There are following steps for ELK stack installation and configuration -
+#####There are following steps for ELK stack installation and configuration -
 
-Elasticsearch -
+######Elasticsearch -
      
      curl -O https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.1.tar.gz
      tar zxvf elasticsearch-1.7.1.tar.gz
      ./elasticsearch-1.7.1/bin/elasticsearch ==> to start
      
-Kibana -
+######Kibana -
 
      echo "deb http://packages.elastic.co/kibana/4.4/debian stable main" | sudo tee -a /etc/apt/sources.list.d/kibana-4.4.x.list
      sudo apt-get update
@@ -17,7 +17,7 @@ Kibana -
      sudo vi /opt/kibana/config/kibana.yml ==> open and config 
      server.host: "localhost"
      service kibana4 start ==> to start in ubuntu
-Logstash -
+######Logstash -
 
      curl -O https://download.elasticsearch.org/logstash/logstash/logstash-1.4.2.tar.gz
      tar zxvf logstash-1.4.2.tar.gz
