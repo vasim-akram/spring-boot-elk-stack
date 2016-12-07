@@ -10,12 +10,12 @@
 
 	<name>spring-boot-elk-stack</name>
 	<description>Spring boot with ELK stack</description>
-
+        <!-- lookup parent from repository -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> 
 	</parent>
 
 	<properties>
@@ -29,6 +29,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- for logstash encoder-->
 		<dependency>
 		    <groupId>net.logstash.logback</groupId>
 		    <artifactId>logstash-logback-encoder</artifactId>
